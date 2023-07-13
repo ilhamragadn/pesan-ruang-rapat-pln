@@ -1,6 +1,6 @@
 <div class="flex flex-col col-span-full sm:col-span-6 xl:col-span-4 bg-white dark:bg-slate-800 shadow-lg rounded-sm border border-slate-200 dark:border-slate-700">
     <div class="px-5 pt-5 pb-5">
-        <div class="text-sm font-semibold text-white p-1.5 bg-red-600 rounded-full float-right">Tidak Tersedia</div>
+        <div class="text-sm font-semibold text-white px-1.5 bg-red-600 rounded-full float-right">Tidak Tersedia</div>
         <div>
             <img src="{{ asset('images/ikon-ruang-1.png') }}" alt="icon-ruang-1" width="250" class="mx-auto mt-10 ">
             <h2 class="text-center font-medium text-xl mt-3 dark:text-slate-200">Ruang Bromo</h2>
