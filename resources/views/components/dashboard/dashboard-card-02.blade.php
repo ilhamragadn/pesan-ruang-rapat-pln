@@ -3,7 +3,7 @@
         <div class="text-sm font-semibold text-white p-1.5 bg-green-600 rounded-full float-right">Tersedia</div>
         <div>
             <img src="{{ asset('images/ikon-ruang-2.png') }}" alt="icon-ruang-1" width="250" class="mx-auto mt-10 ">
-            <h2 class="text-center font-medium text-xl mt-3">Ruang Arjuno</h2>
+            <h2 class="text-center font-medium text-xl mt-3 dark:text-slate-200">Ruang Arjuno</h2>
         </div>
         <div class="mt-3 flex justify-center text-white">
             <button class="bg-gray-600 px-5 py-2 mx-3 rounded-md">Detail</button>

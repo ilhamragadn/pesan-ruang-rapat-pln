@@ -3,9 +3,9 @@
         <div class="text-sm font-semibold text-white p-1.5 bg-red-600 rounded-full float-right">Tidak Tersedia</div>
         <div>
             <img src="{{ asset('images/ikon-ruang-1.png') }}" alt="icon-ruang-1" width="250" class="mx-auto mt-10 ">
-            <h2 class="text-center font-medium text-xl mt-3">Ruang Bromo</h2>
+            <h2 class="text-center font-medium text-xl mt-3 dark:text-slate-200">Ruang Bromo</h2>
         </div>
-        <div class="mt-3 flex justify-center text-white">
+        <div class="mt-3 flex justify-center text-white ">
             <button class="bg-gray-600 px-5 py-2 mx-3 rounded-md">Detail</button>
             <button class="bg-blue-600 px-5 py-2 mx-3 rounded-md">Pesan</button>
         </div>
