@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BookingController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DataFeedController;
 use App\Http\Controllers\DashboardController;
@@ -17,6 +18,8 @@ use App\Http\Controllers\DashboardController;
 
 // Route::redirect('/', 'dashboard');
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+
+Route::get('/history', [BookingController::class, 'index'])->name('history');
 
 // Route::middleware(['auth:sanctum', 'verified'])->group(function () {
 

@@ -60,7 +60,7 @@
                     <li class="px-3 py-2 rounded-sm mb-0.5 last:mb-0 @if(in_array(Request::segment(1), ['dashboard'])){{ 'bg-slate-900' }}@endif"
                         x-data="{ open: {{ in_array(Request::segment(1), ['dashboard']) ? 1 : 0 }} }">
                         <a class="block text-slate-200 hover:text-white truncate transition duration-150 @if(in_array(Request::segment(1), ['dashboard'])){{ 'hover:text-slate-200' }}@endif"
-                            href="#0" @click.prevent="sidebarExpanded ? open = !open : sidebarExpanded = true">
+                            href="{{ route('dashboard') }}" >
                             <div class="flex items-center justify-between">
                                 <div class="flex items-center">
                                     <svg class="shrink-0 h-6 w-6" viewBox="0 0 24 24">
@@ -81,10 +81,10 @@
                             </div>
                         </a>
                     </li>
-                    <li class="px-3 py-2 rounded-sm mb-0.5 last:mb-0" x-data="{ open: false }">
-                        <a class="block text-slate-200 transition duration-150"
-                            :class="open ? 'hover:text-slate-200' : 'hover:text-white'" href="#0"
-                            @click.prevent="sidebarExpanded ? open = !open : sidebarExpanded = true">
+                    <li class="px-3 py-2 rounded-sm mb-0.5 last:mb-0 @if(in_array(Request::segment(1), ['history'])){{ 'bg-slate-900' }}@endif"
+                    x-data="{ open: {{ in_array(Request::segment(1), ['history']) ? 1 : 0 }} }">
+                        <a class="block text-slate-200 transition duration-150 @if(in_array(Request::segment(1), ['history'])){{ 'hover:text-slate-200' }}@endif"
+                            :class="open ? 'hover:text-slate-200' : 'hover:text-white'" href="{{ route('history')}}">
                             <div class="flex items-center justify-between">
                                 <div class="flex items-center">
                                     <svg class="shrink-0 h-6 w-6" viewBox="0 0 24 24">
